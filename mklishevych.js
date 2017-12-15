@@ -4,7 +4,7 @@ function my(a, b, c, x) {
     var v = b * ratio;
     var z = x - (y + v);
 
-    return { y: y, v: v, z: z, sum: (y + v + z) }
+    return { y: y, v: v, z: z }
 }
 
 // tests
