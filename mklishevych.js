@@ -1,10 +1,15 @@
 function my(a, b, c, x) {
-    var ratio = x / (a + b + c);
-    var y = a * ratio;
-    var v = b * ratio;
-    var z = x - (y + v);
+    const sum = a + b + c;
+    if (sum === 0) {
+        return { y: 0, v: 0, z: 0 };
+    }
+    
+    const ratio = x / sum;
+    const y = a * ratio;
+    const v = b * ratio;
+    const z = x - (y + v);
 
-    return { y: y, v: v, z: z }
+    return { y, v, z };
 }
 
 // tests
