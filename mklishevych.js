@@ -1,9 +1,10 @@
 function my(a, b, c, x) {
     const sum = a + b + c;
     if (sum === 0) {
-        return { y: 0, v: 0, z: 0 };
+        const res = x / 3;
+        return { y: res, v: res, z: res };
     }
-    
+
     const ratio = x / sum;
     const y = a * ratio;
     const v = b * ratio;
